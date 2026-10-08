@@ -1,0 +1,38 @@
+[
+  {
+    "id": "site-a",
+    "name": "訪問看護サイトA",
+    "phpVersion": "7.4.33",
+    "wpVersion": "6.0.1",
+    "theme": "架空テーマA 1.2.0",
+    "lastBackup": "2026-09-20",
+    "issues": [
+      { "title": "PHPの版を安定版へ上げる", "done": false },
+      { "title": "側面の案内枠が追加できない状態を直す", "done": false },
+      { "title": "定期の控えを取る", "done": true }
+    ]
+  },
+  {
+    "id": "site-b",
+    "name": "訪問介護サイトB",
+    "phpVersion": "8.0.30",
+    "wpVersion": "6.3.2",
+    "theme": "架空テーマB 2.0.1",
+    "lastBackup": "2026-09-28",
+    "issues": [
+      { "title": "側面の案内枠の表示崩れを確認する", "done": false },
+      { "title": "問い合わせ送受信の確認", "done": false }
+    ]
+  },
+  {
+    "id": "site-c",
+    "name": "相談支援サイトC",
+    "phpVersion": "8.2.10",
+    "wpVersion": "6.5.1",
+    "theme": "架空テーマC 1.0.4",
+    "lastBackup": "2026-10-01",
+    "issues": [
+      { "title": "軽微な表示の乱れを確認する", "done": false }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3サイト保守チェック</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<h1>3サイト保守チェック</h1>
+<p class="sub">版の状態と残りの作業を一覧で確認する画面です。判定は画面内の固定ルールで行っています。</p>
+</header>
+<main>
+<section class="summary" aria-label="概要">
+<div class="card"><div class="num" id="total">3</div><div class="lbl">対象サイト</div></div>
+<div class="card danger"><div class="num" id="needAction">2</div><div class="lbl">対応が必要</div></div>
+<div class="card warn"><div class="num" id="needCheck">1</div><div class="lbl">確認を推奨</div></div>
+<div class="card ok"><div class="num" id="stable">0</div><div class="lbl">安定</div></div>
+</section>
+
+<section aria-label="サイト一覧">
+<h2>サイト一覧</h2>
+<div id="sites" class="sites"></div>
+</section>
+
+<section aria-label="作業一覧">
+<h2>残りの作業（優先度順）</h2>
+<p class="note">対応が必要なサイトの作業を先に並べています。終わったら印を付けられます。</p>
+<ul id="tasks" class="tasks"></ul>
+</section>
+
+<section aria-label="判定ルール">
+<h2>判定ルール</h2>
+<ul class="rules">
+<li>PHP 7系と 8.0 は「更新が必要」、8.1 は「まもなく更新時期」、8.2 以上は「安定」としています。</li>
+<li>本体 6.2 以前は「更新が必要」、6.4 以前は「確認を推奨」、6.5 以降は「安定」としています。</li>
+<li>どちらかに「更新が必要」があれば全体も「対応が必要」になります。</li>
+</ul>
+</section>
+</main>
+<footer class="footer">架空データの表示例です。</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "site-maintenance-check-poc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "複数サイトの保守状態を見える化するPOC",
+  "scripts": {
+    "test": "node --test test/"
+  }
+}
